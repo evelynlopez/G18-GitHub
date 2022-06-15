@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+}
+main{
+    background-color: aqua;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: auto auto auto auto; 
+}
+
+article{
+    background-color: crimson;
+    color: #fff;
+    text-align: center;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
