@@ -12,3 +12,17 @@ header{
     justify-content: space-between;
     width: 100%;
 }
+h3 {
+    font-family: 'Courier New', Courier, monospace !important;
+    border: 1px solid purple;
+    color: black;
+}
+h3:hover {
+    background: purple;
+    font-size: 25px !important;
+    color: #fff;
+}
+img {
+    width: 30vh;
+    border: 1px solid cornflowerblue;
+}
