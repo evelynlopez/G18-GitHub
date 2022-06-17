@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+img{
+    height: 30vh;
+}
+p{
+    font-size: 20px;
+}
+span{
+    font-size: 0.75em;
+}
+h3{
+    font-size: 1rem;
+}
+@media screen and (min-width:794px){
+    body{
+        background-color: blue;
+        margin: 25px;
+    }
+    figure{
+        float: left;
+        width: 45%;
+        margin: 4%;
+    }
+}
+@media only screen and (min-width:1020px){
+    body{
+        background-color: red;
+        margin: 25px;
+    }
+    figure{
+        width: 30%;
+        margin: 2%;
+    }
+}
