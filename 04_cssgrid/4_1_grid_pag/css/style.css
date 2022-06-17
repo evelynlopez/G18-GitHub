@@ -109,3 +109,9 @@ h3:hover {
     background: lightpink;
     color: #fff;
 }
+
+@media only screen and (max-width:600px){
+    section {
+        grid-template-columns: none !important;
+    }
+}
