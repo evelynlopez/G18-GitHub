@@ -1,0 +1,51 @@
+main{
+    height: 100vh;
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+}
+.padre {
+    display: flex;
+}
+main .izquierda, .derecha{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.izquierda .uno {
+    height: 15vh;
+    background: darkseagreen;
+    border-radius: 1px;
+}
+.izquierda .dos{
+    height: 15vh;
+    background: blue;
+}
+.izquierda .tres{
+    height: 20vh;
+    background: purple;
+}
+.izquierda .cuatro{
+    height: 5vh;
+    background: gray;
+    border-radius: 1px; 
+}
+.derecha .cinco{
+    height: 50%;
+    background-color: yellow;
+    border-radius: 1px; 
+}
+.derecha .seis{
+    height: 50%;
+    background-color: orange;
+    border-radius: 1px; 
+}
+p {
+    color: white;
+    text-align: center;
+    margin-top: 4px;
+    font-family: monospace;
+    font-size: larger;
+    font-weight: bold;
+}
+
