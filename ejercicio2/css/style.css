@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+.container{
+    background-color: red;
+    flex-wrap: wrap;
+    flex-direction:column;
+    width: 50%;
+    margin: auto;
+}
+.seccionup,.secciondown{
+    display: flex;
+    flex-direction: row;
+    height:210px;
+}
+.seccionmedia {
+    height: 40px;
+    background-color: darkblue;
+}
+.medio{
+    background-color: darkblue;
+}
+.supd1{
+    flex-basis: 35%;
+    border-bottom: 20px solid #fff;
+    border-right: 20px solid #fff;
+}
+.supd3{
+    border-bottom: 20px solid #fff;
+    border-left: 20px solid #fff;
+}
+.sdown1 {
+    border-top: 20px solid #FFF;
+    border-right: 20px solid #fff;
+}
+.sdown3 {
+    border-top: 20px solid #FFF;
+    border-left: 20px solid #fff;
+}
+

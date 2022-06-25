@@ -1,0 +1,516 @@
+*{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+img{
+    width: 100%;
+}
+body{
+    height: 100vh;
+}
+
+.navHeader {
+    width: 100%;
+    position: relative;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    position: fixed;
+    z-index: 100;
+    background: white;
+    flex-direction: column;
+    margin-top: -55px;
+}
+
+.navHeader .contenedorPrincipalHeader {
+    height: 80px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 12px 0px 16px;
+    width: 100%;
+}
+
+.navHeader .contenedorPrincipalHeader .fase1{
+    display: flex;
+    flex-direction: row;
+    border: 10px solid white;
+    cursor: pointer;
+    padding-left: 24px;
+}
+
+.navHeader .contenedorPrincipalHeader .fase1 .logo {
+    width: 20px;
+    height: 20px;
+}
+
+.navHeader .contenedorPrincipalHeader .fase2{
+    width: 300px;
+}
+
+.navHeader .contenedorPrincipalHeader .fase2{
+    width: 300px;
+}
+
+.navHeader .contenedorPrincipalHeader .fase2 a{
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    text-decoration: none;
+    color: black;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:15px;
+    padding-right:15px;
+}
+.div-svg-lupa {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.round {
+    border: 1px solid rgba(0, 0, 0, .1);;
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 16px !important;
+    font-weight: normal;
+    outline: none;
+    border: none;
+    color: #333;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+
+.corner {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+}
+
+.search {
+    box-sizing: content-box;
+    position: relative;
+    width: 52%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    background-color: #f0f0f0;
+    align-items: center;
+    padding-left: 8px;
+}
+.search-2{
+    display: none;
+}
+.search:hover {
+    background: rgba(0, 0, 0, .15);
+}
+.search:focus {
+    border: 3px solid aqua;
+}
+.iconos-img{
+    width: 30px;
+    height: 30px;
+}
+.iconos.letter {
+    background: #ddd;
+    border-radius: 100%;
+    padding: 8px;
+}
+.iconos-img-l{
+    width: 15px;
+    height: 15px;
+}
+.navHeader .contenedorPrincipalHeader .inicio {
+    display: flex;
+    flex-direction: row;
+    margin-right: 16px;
+}
+.navHeader .contenedorPrincipalHeader .inicio .inicioSesion {
+    background-color: rgba(238, 233, 233, 0.911);
+    color: black;
+    border-radius: 12px;
+    border-width: 0px;
+    height: 40px;
+}
+
+.navHeader .contenedorPrincipalHeader .inicio .inicioSesion:hover {
+    background-color: #ded5d5;
+}
+
+.navHeader .contenedorPrincipalHeader .inicio .registrarse {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 12px;
+    border-width: 0px;
+    height: 40px;
+}
+
+.navHeader .contenedorPrincipalHeader .inicio .registrarse:hover {
+    background-color: rgb(197, 6, 6);
+}
+.abtn-inicio{
+    background-color: black !important;
+    color: white !important;
+    border-radius: 24px;
+}
+.iconos {
+    display: flex;
+    flex-direction: row;
+    border: 10px solid white;
+    cursor: pointer;
+}
+.iconos:hover {
+    border: 10px solid rgba(0, 0, 0, .0);
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, .1);
+}
+.fase2down{
+    display: none;
+}
+.fase2down a{
+    color: black;
+}
+
+
+/* .contenedor{
+    padding: 1rem;
+} */
+.img-content{
+    position: relative;
+    overflow: hidden;
+}
+.img-content img{
+    width: 100%;
+}
+.contenedor:hover .texto{
+    display: flex;
+}
+.contenedor:hover .div-btn-down{
+    display: flex;
+}
+.contenedor:hover img {
+    opacity: .9;
+}
+.texto, .div-btn-down{
+    display: none;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 94%;
+    opacity: 0.9;
+    border-radius: 30px;
+    cursor: zoom-in;
+}
+.texto{
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.div-btn-down {
+    background: rgba(0, 0, 0, .0);
+    justify-content: center;
+    align-items: end;
+    border-radius: 30px;
+}
+.texto h1{
+    padding: 8px 16px;
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.iconos-d-crecer {
+    background: rgba(255,255,255,.6);
+    border-radius: 100px;
+    width: 150px;
+    height: 44px;
+}
+img.iconos-img-crecer {
+    height: 50%;
+    width: 100%;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+img.iconos-img-subir{
+    height: 20px !important;
+}
+.iconos-d-subir, .iconos-d-puntos,.iconos-d-crecer{
+    background: rgba(255,255,255,.6);
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: revert;
+    cursor: pointer;
+}
+  
+@media  screen and (min-width:997px) and (max-width:1150px){
+    .navHeader .contenedorPrincipalHeader .fase2 {
+        width: 380px;
+    }
+}
+@media  screen and (max-width:996px){
+    .navHeader .contenedorPrincipalHeader{
+        padding-left: 0px;
+        margin-left: -5px;
+    }
+    .navHeader .contenedorPrincipalHeader .fase1{
+        padding-left: 0px;
+    }
+    .fase2down{
+        display: flex;
+        text-decoration: none;
+        width: 200px;
+    }
+    a.btn-inicio-down {
+        text-decoration: none;
+    } 
+    .fase2{
+        display: none;
+    }
+    img.iconos-img-down {
+        width: 16px  !important;
+        height: 16px !important;
+    } 
+}
+@media screen and (max-width:572px){
+    .div-svg-lupa {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .search-2{
+        display: flex;
+        border: 10px solid white;
+    }
+    .search{
+        display: none;
+    }
+    .search-2:hover {
+        display: flex;
+        border-radius: 100px;
+        border-color: rgba(0, 0, 0, .0);
+        background-color: rgba(0, 0, 0, .1);
+        cursor: pointer;
+    }
+    
+}
+@media screen and (max-width:420px) {
+    .iconos{
+        display: none;
+    }
+    .down{
+        display: block;
+    }
+    .navHeader .contenedorPrincipalHeader .fase1 {
+        padding-left: 30px;
+    }
+
+}
+@media screen and (min-width:701px) and (max-width:900px){
+    .column{
+        flex: 30% !important;;
+    }
+}
+@media screen and (min-width:579px) and (max-width:700px){
+    .column{
+        flex: 50% !important;;
+    }
+}
+@media screen and (min-width: 50px) and (max-width: 580px){
+    .column {
+        flex: 100% !important;
+    }
+}
+
+
+
+/* Omar */
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .column{
+      flex: 10%;
+      padding: 10px;
+  }
+  
+  .column img{
+      margin-top: 5px;
+  }
+
+  .img-principal{
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+  }
+
+  .column img:hover{
+    opacity: 0.3;
+}
+
+.popout {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 320px;
+    height: 180px;
+    border: 1px solid;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 1px black;
+    border-color: white;
+    font-size: 14px;
+    top: 100%;
+    right: 3%;
+    background-color: white;
+}
+
+.popout .acercade {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.popout .separacion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.popout .separacion .line {
+    border-top: 1px solid;
+    width: 100%;
+}
+
+.popout .solicitud {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    margin-left: 12px;
+}
+
+.popout .solicitud .solicitudes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 230px;
+}
+
+.popout .acercade span {
+    width: max-content;
+}
+
+.popout .acercade span:hover {
+    border-bottom: 1px solid;
+    border-bottom-color: black;
+}
+
+.popout .solicitud .btnSolicitudes {
+    width: 40px;
+    height: 24px;
+    align-self: center;
+    border-style: solid;
+    border-width: 0.6667px;
+    border-radius: 48px;
+    border-color: rgb(118, 118, 118);
+}
+
+.popout .solicitud .btnSolicitudes .activarcheck {
+    width: 24px;
+    height: 24px;
+    border-style: solid;
+    border-width: 0.6667px;
+    border-radius: 48px;
+    border-color: rgb(118, 118, 118);
+}
+
+.form-loging {
+display: none;
+position: fixed;
+border:  solid 1px;
+bottom: 0;
+right: 15px;
+z-index: 9;
+}
+
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
+}
+
+.form-container .top{
+font-size:large;
+text-align: center;
+}
+
+.form-container .center{
+font-size: medium;
+text-align: center;
+font-weight: normal;
+}
+
+.form-container .bottom{
+font-size: smaller;
+text-align: left;
+font-weight: normal;
+}
+
+.form-container .Google {
+background-color: white;
+color: black;
+padding: 16px 20px;
+border: 1px black solid;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+border-radius: 25px;
+font-weight: bold;
+text-align: left;
+font-size: medium;
+}
+
+.form-container .Facebook {
+background-color: blue;
+color: white;
+font-weight: bold;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+border-radius: 25px;
+font-weight: bold;
+text-align: left;
+font-size: medium;
+}
+
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+.form-container .Google img{
+width: 55px;
+height: 25px;
+}
+
+.form-container .Facebook img{
+width: 55px;
+height: 25px;
+}
